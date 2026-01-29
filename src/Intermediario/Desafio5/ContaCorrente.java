@@ -10,6 +10,10 @@ public class ContaCorrente extends ContaBancaria {
         super(saldo);
     }
 
+    public ContaCorrente(double saldo, String titularDaConta, int numeroDaConta, TiposDeContas conta) {
+        super(saldo, titularDaConta, numeroDaConta, conta);
+    }
+
     @Override
     public void depositar(double valor) {
         System.out.println("Depósito em conta corrente");

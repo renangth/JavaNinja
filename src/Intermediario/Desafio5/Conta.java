@@ -3,9 +3,15 @@ package Intermediario.Desafio5;
 public interface Conta {
 
     //método para consultar saldo:
-    public void consultarSaldo();
+    void consultarSaldo();
 
     //metodo para depositar:
-    public abstract void depositar(double valor);
+    abstract void depositar(double valor);
+
+    //metodo para sacar
+    boolean sacar(double valor);
+
+    //metodo para transferir
+    boolean transferir(double valor, ContaBancaria contaDestino);
 
 }
