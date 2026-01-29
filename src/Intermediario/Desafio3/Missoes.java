@@ -1,4 +1,4 @@
-package Intermediario.Desafio1;
+package Intermediario.Desafio3;
 
 public class Missoes {
     String missao[] = new String[4];

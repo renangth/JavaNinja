@@ -2,7 +2,7 @@ package Basico.Array;
 
 import java.util.Scanner;
 
-public class desafioCadastroNinja {
+public class Desafio1 {
     public static void main(String[] args) {
 
         // array utilizado:

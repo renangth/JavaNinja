@@ -2,22 +2,23 @@ package Intermediario.Aulas.AbstracaoEPolimorfismo;
 
 public class Main {
     static void main(String[] args) {
-        Uchiha Sasuke = new Uchiha();
-        Sasuke.nome = "Sasuke";
-        Sasuke.idade = 20;
-        Sasuke.aldeia = "Aldeia da Folha";
+
+        //Criando Sasuke
+        Uchiha Sasuke = new Uchiha("Sasuke", "aldeia da folha", 19, 10, NIvelNInja.KAGE);
+        Sasuke.HabilidaeEspecial();
         Sasuke.SharinganAtivado();
+        Sasuke.EstrategiaDeBatalhaNinja();
+        Sasuke.InteligenciaDeCombate();
+        Sasuke.InteligenciaDeCombate(170);
 
-       /* Uzumaki Naruto = new Uzumaki();
-        Naruto.nome = "Naruto";
-        Naruto.idade = 18;
-        Naruto.aldeia = "Aldeia da Folha";
+
+        Uzumaki Naruto = new Uzumaki("Naruto", "aldeia da folha", 18, 7, NIvelNInja.KAGE);
+        Naruto.EstrategiaDeBatalhaNinja();
         Naruto.HabilidaeEspecial();
-        Naruto.EstrategiaDeBatalhaNinja();*/
 
-        Hatake Kakashi = new Hatake();
-        Kakashi.nome = "Kakashi";
+        Hatake Kakashi = new Hatake("Hatake", "aldeia da folha", 40, 31, NIvelNInja.KAGE);
         Kakashi.SharinganAtivado();
         Kakashi.ninjaDeElite();
+        Kakashi.EstrategiaDeBatalhaNinja();
     }
 }

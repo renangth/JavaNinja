@@ -1,6 +1,6 @@
 package Basico.Condicoes;
 
-public class Desafio1 {
+public class Desafio2 {
     public static void main(String[] args) {
         String ninja1 = "NARUTO";
         int idadeNinja1 = 20;

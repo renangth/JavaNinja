@@ -1,4 +1,4 @@
-package Intermediario.Desafio2;
+package Intermediario.Desafio4;
 
 public class NinjaAvancado implements Ninja{
 
