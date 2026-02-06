@@ -48,7 +48,6 @@ public abstract class ContaBancaria implements Conta {
 
     // utilizando o metodo de transferencia
 
-
     @Override
     public boolean transferir(double valor, ContaBancaria contaDestino) {
         if (sacar(valor)) {
