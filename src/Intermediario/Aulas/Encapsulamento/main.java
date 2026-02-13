@@ -16,5 +16,8 @@ public class main {
         Sasuke.setNome("Sasuke Uchiha");
         System.out.println("=====================");
         Sasuke.exibirInformacoes();
+
+        Missoes missao1 = new Missoes("Treinar socos", RankDeMissoes.D);
+        missao1.exibirDetalhes();
     }
 }
