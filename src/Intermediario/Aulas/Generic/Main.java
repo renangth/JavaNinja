@@ -3,18 +3,12 @@ package Intermediario.Aulas.Generic;
 public class Main {
     public static void main(String[] args) {
 
+        BolsaGenerica<Object> bolsaGenerica = new BolsaGenerica<>();
+        bolsaGenerica.adicionarFerramenta(new Shuriken(10));
+        bolsaGenerica.adicionarFerramenta(new Pergaminho("Invocaçao da  raposa de 9 caldas"));
+        bolsaGenerica.adicionarFerramenta(new Kunai("Kunai elétrica"));
 
-        // criando equipamentos 
-        EquipamentosNinja kunai = new EquipamentosNinja("Kunai");
-        EquipamentosNinja shuriken = new EquipamentosNinja("Shuriken");
-        EquipamentosNinja pergaminho = new EquipamentosNinja("Pergaminho");
-
-        // usando a bolsa generica pra guardar os equipamentos
-        BolsaGenerica<EquipamentosNinja> bolsaGenerica = new BolsaGenerica<>();
-        bolsaGenerica.adicionarEquipamentos(shuriken);
-        bolsaGenerica.adicionarEquipamentos(kunai);
-        bolsaGenerica.adicionarEquipamentos(pergaminho);
-
-        System.out.println(bolsaGenerica);
+        System.out.println("===== Itens da Bolsa Ninja =====");
+        bolsaGenerica.mostrarFerramentas();
     }
 }

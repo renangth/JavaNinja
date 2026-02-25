@@ -5,28 +5,31 @@ import java.util.List;
 
 public class BolsaGenerica<T> {
 
-    private List<T> equipamentos;
+    private List<T> ferramentas;
 
     public BolsaGenerica() {
-        this.equipamentos = new ArrayList<>();
+        this.ferramentas = new ArrayList<>();
     }
 
-    public List<T> getEquipamentos() {
-        return equipamentos;
+    public List<T> getFerramentas() {
+        return ferramentas;
     }
 
-    public void setEquipamentos(List<T> equipamentos) {
-        this.equipamentos = equipamentos;
+    public void setFerramentas(List<T> ferramentas) {
+        this.ferramentas = ferramentas;
     }
 
-    //Colocar equipamentos:
-
-    public void adicionarEquipamentos(T equipamento) {
-        equipamentos.add(equipamento);
+    public void adicionarFerramenta(T ferramenta) {
+        ferramentas.add(ferramenta);
     }
 
+    public void mostrarFerramentas() {
+        for (T ferramenta : ferramentas) {
+            System.out.println(ferramenta);
+        }
+    }
     public String toString() {
-        return "bolsa de equipamentos : " + equipamentos.toString();
+        return "bolsa de equipamentos : " + ferramentas.toString();
     }
 
 }
