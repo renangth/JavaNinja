@@ -13,7 +13,7 @@ public class Main {
         ninjas.add(new Ninja("Temari", "Suna", 20));
         ninjas.add(new Ninja("Rock Lee", "Konoha", 50));
 
-        // Ordenando por idade usando stream
+        // SORTED : Ordenando por idade usando stream
         System.out.println("===== Ninjas em ordem de idade =====");
         ninjas.stream()
                 .sorted((n1,n2) -> Integer.compare(n1.getIdade(), n2.getIdade()))
@@ -21,15 +21,21 @@ public class Main {
 
         System.out.println("===== Ninjas de Konoha =====");
 
-        //Filtrando os ninjas que sao de Konoha
+        //FILTER : Filtrando os ninjas que sao de Konoha
         ninjas.stream()
                 .filter(ninja -> ninja.getVila().equals("Konoha"))
                         .forEach(System.out::println);
 
-        // Filtrando por ordem alfabética
+        // SORTED : Filtrando por ordem alfabética
         System.out.println("===== Ninjas em ordem alfabética =====");
         ninjas.stream()
-                .sorted((n1, n2) -> String.CASE_INSENSITIVE_ORDER.compare(n1.getNome(), n2.getNome()))
+                .sorted((n1, n2) -> n1.getNome().compareTo(n2.getNome()))
+                .forEach(System.out::println);
+
+        System.out.println("===== Ninjas em ordem alfabetica de novo =====");
+        //MAP : ordenar e mapear um atributo (ordenando por nome)
+        ninjas.stream()
+                .map(Ninja::getNome)
                 .forEach(System.out::println);
 
 
